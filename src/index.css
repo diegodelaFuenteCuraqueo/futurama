@@ -5,9 +5,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/742/526/556/futurama-fry-bender-hd-wallpaper-preview.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+
+  margin: 1rem 2rem;
+  max-width: 1000px;
+  padding: 1rem 1rem;
+}
+
+.cardList{
+  
+  display: grid;
+  align-items: flex;
+  flex-wrap: wrap;
+  justify-content:baseline;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.card{
+  display : flex;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(109,181,161,0.9);
+  color: white;
+  border-radius: 25px;
+}
+
+@keyframes hoverScaling {
+  from {  transform: scale(1.0);  }
+  to {  transform: scale(1.1); }
+}
+
+.card:hover{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  animation-name: hoverScaling;
+  animation-duration: 0.5s;
+  transform: scale(1.1);
+}
+
+.characterImage{
+  width: 70%;
+  margin: 24px auto;  
+  align-items: center;
+  justify-self: center;
+}
+
+.imageContainer{
+  max-width: 50%;
+  max-height: 50%;
+  align-items: center;
+  justify-self: center;
+}
+
+li {
+  list-style-type: "-";
+  text-align: left;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: monospace;
+  text-shadow: 0 0 5px black;
+}
+
+.searchBar{
+  width: 100%;
+}
+
+.searchBar input{
+  width: 50%;
+  padding: 10px 10px;
+  margin: 10px; 
 }
