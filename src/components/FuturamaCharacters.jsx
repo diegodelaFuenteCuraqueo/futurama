@@ -4,7 +4,6 @@ import SearchCharacter from './SearchCharacter'
 import CardList from './CardList'
 
 // TODO: separate searchbar in new component
-
 function FuturamaCharacters(){
   const [characters, setCharacters] = useState([])
   const [filterName, setFilterName] = useState("")
@@ -23,8 +22,7 @@ function FuturamaCharacters(){
   const filteredCharacters = characters.filter( character => { 
     const flatName = (character.name.first+" "+character.name.middle+" "+character.name.last).toUpperCase()
     return flatName.includes( filterName.toUpperCase() )
-  })
-  
+  })  
   //preguntar por maña del puto console.log en relación con errores de react
   console.log(characters)
 
@@ -44,3 +42,4 @@ function FuturamaCharacters(){
 }
 
 export default FuturamaCharacters
+

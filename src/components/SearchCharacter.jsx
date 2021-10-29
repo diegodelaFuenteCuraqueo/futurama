@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 
-
 function SearchCharacter() {
   const [name, setName] = useState("");
-
   useEffect(() => {
     console.log(name)
   },[name])
@@ -26,3 +24,4 @@ function SearchCharacter() {
 }
 
 export default  SearchCharacter
+

@@ -1,8 +1,6 @@
 import Card from './Card'
 //  TODO : check wtf "props validation" really means...
 function CardList( props) {
-  console.log(props)
-  
   const cards = props.allCards.map(card => (
     <Card
       key={card.id}
@@ -22,3 +20,4 @@ function CardList( props) {
 }
 
 export default CardList
+
